@@ -24,5 +24,17 @@ namespace EcoAct.Infrastructure.Repositories
             return campaigns;
         }
 
+
+        public async Task<Campaign?> GetByIdAsync(Guid id)
+        {
+            var campaign = await _context.Campaigns.FindAsync(id);
+
+            if(campaign == null)
+            {
+                return null;
+            }
+
+            return campaign;
+        }
     }
 }
