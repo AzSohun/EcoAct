@@ -4,7 +4,7 @@ using System.Text;
 
 namespace EcoAct.Domain.Entities
 {
-    internal class Campaign
+    public class Campaign
     {
         public Guid id { get; set; }
         public string Title { get; set; } = string.Empty;
@@ -15,6 +15,5 @@ namespace EcoAct.Domain.Entities
         public DateTime EndDate { get; set; }
         public bool IsActive { get; set; } = true;
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-        public DateTime? UpdatedAt { get; set; }
     }
 }
