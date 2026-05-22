@@ -9,7 +9,7 @@ namespace EcoAct.Domain.Entities
         public Guid id { get; set; }
         public string Title { get; set; } = string.Empty;
         public string Despcription { get; set; } = string.Empty;
-        public int TargetedTree { get; set; }
+        public int TargetTrees { get; set; }
         public int PlantedTree { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
