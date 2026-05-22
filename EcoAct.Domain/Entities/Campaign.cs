@@ -10,7 +10,7 @@ namespace EcoAct.Domain.Entities
         public string Title { get; set; } = string.Empty;
         public string Despcription { get; set; } = string.Empty;
         public int TargetTrees { get; set; }
-        public int PlantedTree { get; set; }
+        public int PlantedTrees { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public bool IsActive { get; set; } = true;
