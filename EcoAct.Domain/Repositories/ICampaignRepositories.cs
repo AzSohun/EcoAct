@@ -9,7 +9,7 @@ namespace EcoAct.Domain.Repositories
     {
         Task<IEnumerable<Campaign>> GetAllAsync();
         Task<Campaign?> GetByIdAsync(Guid id);
-        Task CreateAsync(Campaign campaign);
+        Task AddAsync(Campaign campaign);
         Task UpdateAsync(Campaign campaign);
         Task DeleteAsync(Guid id);
     }
