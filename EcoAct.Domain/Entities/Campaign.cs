@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
 
 namespace EcoAct.Domain.Entities
 {
@@ -8,7 +6,7 @@ namespace EcoAct.Domain.Entities
     {
         public Guid Id { get; set; }
         public string Title { get; set; } = string.Empty;
-        public string Despcription { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
         public int TargetTrees { get; set; }
         public int PlantedTrees { get; set; }
         public DateTime StartDate { get; set; }

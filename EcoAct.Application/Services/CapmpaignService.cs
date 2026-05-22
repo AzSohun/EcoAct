@@ -2,13 +2,11 @@
 using EcoAct.Application.Services.Interfaces;
 using EcoAct.Domain.Entities;
 using EcoAct.Domain.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Text;
+
 
 namespace EcoAct.Application.Services
 {
-    internal class CapmpaignService: ICampaignService
+    public class CapmpaignService: ICampaignService
     {
 
         private readonly ICampaignRepositories _repository;
@@ -71,14 +69,14 @@ namespace EcoAct.Application.Services
         }
 
 
-        public async Task<CampaignResponseDto?> GeGetCampaignByIdAsync(Guid id)
+        public async Task<CampaignResponseDto?> GetCampaignByIdAsync(Guid id)
         {
 
             var getCampaign = await _repository.GetByIdAsync(id);
 
             var campaign = new CampaignResponseDto
             {
-                Title = getCampaign.Title,
+                Title = getCampaign!.Title,
                 Description = getCampaign.Despcription,
                 TargetTrees = getCampaign.TargetTrees,
                 PlantedTrees = getCampaign.PlantedTrees,
