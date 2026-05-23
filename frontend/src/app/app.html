@@ -1,3 +1,15 @@
 <h1>Welcome to EcoAct Dashboard.</h1>
 
+
+
+<ul>
+    @for (campaign of campaignService.campaigns(); track campaign.id) {
+
+    <li>{{campaign.title}}</li>
+
+    }@empty {
+    <li>Loading campaigns or no data found...</li>
+    }
+</ul>
+
 <router-outlet></router-outlet>

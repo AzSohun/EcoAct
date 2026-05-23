@@ -17,7 +17,7 @@ export class CampaignService {
 
     campaigns = signal<Campaign[]>([]);
 
-    async loadCampaign() {
+    async loadCampaigns() {
         try {
 
             const data = await firstValueFrom(this.http.get<Campaign[]>(this.apiUrl));

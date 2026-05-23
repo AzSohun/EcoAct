@@ -3,13 +3,13 @@
 
 export interface Campaign {
 
-    Id: string,
-    Title: string,
-    Description: string,
-    TargetTrees: number,
-    PlantedTrees: number,
-    StartDate: string,
-    EndDate: string,
-    IsActive: boolean,
+    id: string,
+    title: string,
+    description: string,
+    targetTrees: number,
+    plantedTrees: number,
+    startDate: string,
+    endDate: string,
+    isActive: boolean,
 }
 
