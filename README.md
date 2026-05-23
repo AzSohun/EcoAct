@@ -1,1 +1,1 @@
-"# EcoAct-Backend" 
+"# EcoAct Project" 
